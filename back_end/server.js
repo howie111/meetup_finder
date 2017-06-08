@@ -183,7 +183,7 @@ app.get('*', function (req, res) {
     res.sendFile(path.resolve((__dirname + './../front_end/build/index.html')));
 });
 
-app.listen(8080, () => {
+app.listen(PORT, () => {
   console.log('server is running on prot 8080')
 })
 
