@@ -54,7 +54,7 @@ class PrivatePage extends Component {
               </ul>        
               <ul className="nav navbar-nav navbar-right">
                <li className="active"> <a> Hello! {this.state.data} </a></li>
-               <li><a href="/private/record"><span class="glyphicon glyphicon-log-in"></span> My Meetup</a></li>
+               <li><Link to="/private/record"><span class="glyphicon glyphicon-log-in"></span> My Meetup</Link></li>
                <li><a  href="javascript:history.back()"><span class="glyphicon glyphicon-log-in"></span> Go Back</a></li>
                <li><a href="/"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
               </ul>
