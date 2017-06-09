@@ -18,7 +18,7 @@ addToHistory(item){
       axios
       .post('/save',item)
       .then( (res) =>{
-        
+        console.log(res);
       })
 }
   render() {
