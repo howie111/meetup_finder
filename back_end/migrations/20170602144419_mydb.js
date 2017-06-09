@@ -13,6 +13,7 @@ exports.up = function(knex, Promise) {
     table.string('lat').notNullable();
     table.string('lon').notNullable();
     table.string('user_id').notNullable();
+    table.string('time').notNullable();
   })
 ])
 };
