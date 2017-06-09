@@ -12,10 +12,11 @@ class PrivatePage extends Component {
     this.state = { data: null, loading: true, auth: false, id: null }
   }
   componentDidMount() {
-
+    console.log("Private Page Mounted")
     const self = this;
     if (localStorage.authToken !== undefined && localStorage.authToken !== null) {
       //Add token to request header
+      console.log("Private Page Token: " + localStorage.authToken)
       axios
         .get('/private/record', { headers: { 'authorization': localStorage.authToken } })
         .then((res) => {
