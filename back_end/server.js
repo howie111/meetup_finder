@@ -149,8 +149,8 @@ axios.get(url)
 
 })
 
-app.get('/getrecord/:id',(req,res)=>{
-  MeetupInfo.where({user_id:req.params.id}).fetchAll().then(
+app.get('/getrecord/',(req,res)=>{
+  MeetupInfo.where({user_id:req.headers['userid']}).fetchAll().then(
     info=>{
       const infoArr = info.models.map(item=>{
        return item.attributes

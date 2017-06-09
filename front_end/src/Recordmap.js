@@ -33,7 +33,7 @@ class Recordmap extends Component {
         })
     }
     componentWillMount() {
-        axios.get('/getrecord/' + this.props.userId).then(result => {
+        axios.get('/getrecord/', {headers: {'userid': this.props.userId}}).then(result => {
             this.setState({ meetupRecord: result.data, loading: false })
         })
     }
