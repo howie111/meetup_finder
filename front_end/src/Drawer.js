@@ -41,7 +41,7 @@ addToHistory(item){
           onClick={this.handleToggle}
           >Show Meetups</button>
          </div> 
-        <Drawer  className='drawer' width={'auto'}  openSecondary={true} open={this.state.open} >
+        <Drawer  className='drawer' width={400}  openSecondary={true} open={this.state.open} >
           <AppBar className='appbar' title="Meetup list" />
           <ul className='meetup_ul text-center'>{meetupList}</ul>
         </Drawer>
