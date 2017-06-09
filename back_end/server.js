@@ -98,7 +98,7 @@ app.post('/login', (req,res) => {
 })
 
 
-app.get('/private/:token',authorize('secretkey'),(req,res)=>{
+app.get('/private/record',authorize('secretkey'),(req,res)=>{
  
  
   User.where({username:req.decoded.username}).fetch().then(

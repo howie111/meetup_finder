@@ -17,7 +17,7 @@ class PrivatePage extends Component {
     if (localStorage.authToken !== undefined && localStorage.authToken !== null) {
       //Add token to request header
       axios
-        .get('/private/' + localStorage.authToken, { headers: { 'authorization': localStorage.authToken } })
+        .get('/private/record', { headers: { 'authorization': localStorage.authToken } })
         .then((res) => {
           if (res.status === 200) {
             self.setState({
